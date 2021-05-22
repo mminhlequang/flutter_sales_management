@@ -1,0 +1,63 @@
+name: flutter_sales_management
+description: Web dashboard by flutter.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #Firebase, signIn social
+  crypto: ^3.0.1
+  firebase_core: ^1.2.0
+  cloud_firestore: ^2.2.0
+  firebase_auth: ^1.2.0
+  firebase_storage: ^8.1.0
+#  firebase_messaging: ^10.0.0
+#  flutter_facebook_auth: ^3.4.0
+#  google_sign_in: ^5.0.3
+
+  #Network
+  dio: ^4.0.0
+  connectivity: ^3.0.4
+
+  get: ^4.1.4
+  get_storage: ^2.0.2
+  rxdart: ^0.27.0
+  cupertino_icons: ^1.0.3
+  flutter_easyloading: ^3.0.0
+  flutter_dotenv: ^4.0.0-nullsafety.1
+  socket_io_client: ^1.0.1
+  modal_bottom_sheet: ^2.0.0
+  responsive_builder: ^0.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/images/
+
+  fonts:
+    - family: NunitoSans
+      fonts:
+        - asset: assets/fonts/NunitoSans-Black.ttf
+          weight: 900
+        - asset: assets/fonts/NunitoSans-Black.ttf
+          weight: 800
+        - asset: assets/fonts/NunitoSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NunitoSans-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/NunitoSans-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/NunitoSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NunitoSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/NunitoSans-Light.ttf
+          weight: 200
+        - asset: assets/fonts/NunitoSans-Light.ttf
+          weight: 100
