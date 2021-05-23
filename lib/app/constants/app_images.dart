@@ -7,7 +7,4 @@ class AppImages {
   static final String icArrowBack = 'assets/images/icons/ic_arrow_back.png';
 
   static final String imgStart = 'assets/images/img_start.jpeg';
-  static final String imgWerewolf = 'assets/images/img_werewolf.jpeg';
-
-  static final String bgNavigation = 'assets/images/backgrounds/bg_navigation.webp';
 }

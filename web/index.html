@@ -20,16 +20,37 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_sales_management">
+  <meta name="apple-mobile-web-app-title" content="Sales management">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <title>flutter_sales_management</title>
+  <title>Sales management</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+  <!-- Firebase Configuration -->
+  <script>
+      var firebaseConfig = {
+          apiKey: "AIzaSyBKlrBjJhohHUNOfhzPthAWJHgPY8NwrS0",
+          authDomain: "sales-management-flutter.firebaseapp.com",
+          projectId: "sales-management-flutter",
+          storageBucket: "sales-management-flutter.appspot.com",
+          messagingSenderId: "451308906386",
+          appId: "1:451308906386:web:37d5e8d9fd0a39d08f834b",
+          measurementId: "G-KW637STTYQ"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+  </script>
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;

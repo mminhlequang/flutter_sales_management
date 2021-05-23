@@ -5,4 +5,6 @@ abstract class Routes{
   static const HOME = '/';
 
   static const DASHBOARD = '/dashboard';
+
+  static const AUTHENTICATION = '/authentication';
 }

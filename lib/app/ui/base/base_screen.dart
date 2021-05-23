@@ -5,7 +5,9 @@ import 'package:get/get.dart';
 class BaseScreen<T> extends GetView<T> with ResponsiveWidget {
   @override
   Widget build(BuildContext context) {
-    return buildUi(context: context);
+    return Scaffold(
+      body: buildUi(context: context),
+    );
   }
 
   @override
